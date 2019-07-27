@@ -34,3 +34,43 @@
     line-height: 33px;
   }
 }
+
+.features-section {
+  position: relative;
+  background: #424242;
+  padding: 80px 0 160px 0;
+  &::before {
+    content: '';
+    width: 821px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url('/features-bg.jpg');
+    background-size: cover;
+  }
+}
+
+.features-list {
+  padding-top: 35px;
+  li {
+    position: relative;
+    margin-top: 40px;
+    padding-left: 237px;
+    .icon {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 151px;
+      height: 122px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      transform: translateY(-50%);
+      &--delivery { background-image: url('/ico-1.png'); }
+      &--arrival { background-image: url('/ico-2.png'); }
+      &--gps { background-image: url('/ico-3.png'); }
+      &--repair { background-image: url('/ico-4.png'); }
+    }
+    h5 { line-height: 122px; }
+  }
+}

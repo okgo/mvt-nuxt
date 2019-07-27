@@ -72,6 +72,7 @@ h5,
 h6 {
   font-family: $heading-font;
   font-weight: 400;
+  text-transform: uppercase;
   &.with-lines {
     position: relative;
     display: inline-block;
@@ -96,7 +97,6 @@ h6 {
 h1 {
   font-size: 40px;
   line-height: 48px;
-  text-transform: uppercase;
 }
 
 h2 {
@@ -108,23 +108,24 @@ h3 {
   font-size: 36px;
   line-height: 42px;
   color: #fff;
-  text-transform: uppercase;
 }
 
 h4 {
   font-size: 30px;
   line-height: 40px;
-  text-transform: uppercase;
 }
 
 h5 {
   font-size: 24px;
   line-height: 32px;
+  font-weight: 700;
   color: #fff;
+  font-family: $main-font;
 }
 
 h6 {
   font-size: 14px;
+  text-transform: none;
 }
 
 .clearfix {
@@ -162,8 +163,14 @@ button,
   line-height: 18px;
   font-family: $heading-font;
   text-transform: uppercase;
+  &.black {
+    padding: 16px 38px;
+    border-color: #979797;
+    color: #000;
+  }
 }
 
+.half-width { width: 50%; }
 
 .text-center { text-align: center; }
 
@@ -177,8 +184,22 @@ button,
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
+  padding: 16px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 19px;
+  border: 1px solid #979797;
+  color: #000;
+}
 
+label {
+  display: block;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .logo {
