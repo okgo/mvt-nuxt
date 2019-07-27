@@ -4,7 +4,7 @@
       .inline-block.half-width
         .c-contacts-section__message
           h2.with-lines Talk to us
-          form.c-contacts-section__form(method="POST")
+          form.c-contacts-section__form(method="POST" action="https://formspree.io/vologroupinc@gmail.com")
             .row
               label Name
               input(name="name" placeholder="Your Name" required="required" type="text")
