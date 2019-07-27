@@ -1,0 +1,15 @@
+.c-footer {
+  padding: 20px 0;
+  background: #424242;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  p {
+    margin-left: auto;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    b { font-size: 18px; }
+  }
+}
