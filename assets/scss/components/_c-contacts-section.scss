@@ -36,6 +36,10 @@
         font-size: 18px;
         line-height: 18px;
         font-weight: 400;
+        @include mobile {
+          font-size: 14px;
+          line-height: 14px;
+        }
       }
     }
     .contacts-list {
@@ -46,13 +50,53 @@
         line-height: 27px;
         font-weight: 400;
         text-transform: none;
+        @include desktop {
+          font-size: 18px;
+          line-height: 24px;
+        }
       }
       p {
         margin-top: 10px;
         font-size: 18px;
         line-height: 20px;
         font-weight: 700;
+        @include desktop {
+          font-size: 16px;
+          line-height: 18px;
+        }
       }
+    }
+  }
+  @include wide {
+    .half-width {
+      &:first-child { padding-right: 20px; }
+      &:last-child { padding-left: 20px; }
+    }
+  }
+  @include tablet {
+    padding-top: 50px;
+    &__message,
+    &__content { max-width: none; }
+    &__message {
+      text-align: center;
+      .c-contacts-section__form { text-align: left; }
+    }
+
+    .half-width {
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+      max-width: 640px;
+      &:first-child { padding-right: 0; }
+      &:last-child { padding-left: 0; }
+      .pull-right {
+        float: none;
+      }
+    }
+  }
+  @include mobile {
+    &__content {
+      .contacts-list { padding-top: 25px; }
     }
   }
 }

@@ -10,16 +10,32 @@
   background-position: left center;
   background-size: cover;
   color: #fff;
+  @include mobile {
+    min-height: 540px;
+  }
   .container { display: flex; }
   .text {
     width: 60%;
     max-width: 984px;
     margin-left: auto;
+    @include tablet {
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    @include mobile {
+      margin-top: 40px;
+    }
     p {
       margin-top: 24px;
       max-width: 843px;
       font-size: 20px;
       line-height: 28px;
+      @include desktop {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
     .button { margin-top: 16px; }
   }
@@ -28,10 +44,27 @@
 .about-section {
   padding: 80px 0 200px 0;
   text-align: center;
+  @include tablet {
+    padding: 50px 0 100px 0;
+  }
+  @include mobile {
+    padding-bottom: 80px;
+  }
   p {
     margin-top: 76px;
     font-size: 24px;
     line-height: 33px;
+    @include desktop {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include tablet {
+      margin-top: 40px;
+    }
+    @include mobile {
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 }
 
@@ -41,7 +74,7 @@
   padding: 80px 0 160px 0;
   &::before {
     content: '';
-    width: 821px;
+    width: 42.761%;
     height: 100%;
     position: absolute;
     right: 0;
@@ -49,22 +82,36 @@
     background: url('/features-bg.jpg');
     background-size: cover;
   }
+  @include tablet {
+    padding: 50px 0 100px 0;
+    &::before { display: none; }
+    .inline-block {
+      display: block;
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  @include mobile {
+    padding-bottom: 80px;
+    .inline-block { max-width: 320px; }
+  }
 }
 
 .features-list {
   padding-top: 35px;
+  @include tablet { display: inline-block; }
   li {
     position: relative;
     margin-top: 40px;
     padding-left: 237px;
+    @include tablet { text-align: left; }
     .icon {
       position: absolute;
       left: 0;
       top: 50%;
       width: 151px;
       height: 122px;
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
       transform: translateY(-50%);
       &--delivery { background-image: url('/ico-1.png'); }
       &--arrival { background-image: url('/ico-2.png'); }
@@ -72,5 +119,15 @@
       &--repair { background-image: url('/ico-4.png'); }
     }
     h5 { line-height: 122px; }
+  }
+  @include desktop {
+    li {
+      padding-left: 150px;
+      .icon {
+        width: 100px;
+        height: 81px;
+      }
+      h5 { line-height: 81px; }
+    }
   }
 }

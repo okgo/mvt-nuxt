@@ -3,7 +3,7 @@ $main-font: 'Noto Sans', sans-serif;
 $heading-font: 'Russo One', sans-serif;
 
 @mixin wide {
-  @media (max-width: 1200px) {
+  @media (max-width: 1280px) {
     @content;
   }
 }
