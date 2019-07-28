@@ -4,16 +4,27 @@
       .inline-block.half-width
         .c-contacts-section__message
           h2.with-lines Talk to us
-          form.c-contacts-section__form(method="POST" action="https://formspree.io/vologroupinc@gmail.com")
+          form.c-contacts-section__form(method="POST" action="https://formspree.io/mvtholdinginc@gmail.com")
             .row
               label Name
-              input(name="name" placeholder="Your Name" required="required" type="text")
+              input(
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required="required")
             .row
               label E-mail
-              input(name="_replyto" placeholder="Your E-mail" required="required" type="email")
+              input(
+                name="_replyto"
+                placeholder="Your E-mail"
+                required="required"
+                type="email")
             .row
               label Message
-              textarea(name="message" placeholder="Message" required="required")
+              textarea(
+                name="message"
+                placeholder="Message"
+                required="required")
             .row
               button.black(type="submit") Send
 
