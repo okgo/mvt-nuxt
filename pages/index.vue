@@ -1,34 +1,46 @@
 <template lang="pug">
   div.wrap
+
     section.main-section
       .container.wide
         .text
           h1 We deliver your loads in time, every time.
           p
-            b MVT Holding
-            |— is a staple in the industry. Making logistics less hectic while achieving consistently reliable delivery of goods. Always on time. Above the competition.
+            b POLTRANS logistic
+            |— is an agent for Truckalocity. Truckalocity is a licensed and Bonded, and insured 3rd Party Logistics Provider who has met and exceeded all government requirements and is in good standing with the FMCSA. We have a 30 Day payment record with thousands of contracted carriers. Truckalocity owners have over 30 years of experience.
           nuxt-link.button(to="/#contacts") CONTACT US
+
+    section.features-section
+      .container.wide
+        h2 Our Features
+        ul.features-list
+          li.features-list__item
+            .text-block
+              h3 GET A FREE FREIGHT QUOTE
+              p At <b>Poltrans Brokerage</b> we offer the most reliable carriers at the best rates possible. Don’t worry about checking loads and dealing with claims. Our Certified Master Brokers will handle ANY freight. Put your shipment in good hands. Get a FREE freight quote right away. Quick and Easy. With carriers GUARANTEED to match and exceed all MAP-21 guidelines.
+            .image-block
+              img(src="~/static/feature-1.jpg", alt="POLTRANS Logistic")
+          li.features-list__item.features-list__item--reversed
+            .text-block
+              h3 BEFORE SECURING YOUR FREIGHT, WE ENSURE
+              ul
+                li - Insurence Coverage
+                li - Safety Protocols
+                li - Authorized Carriage
+                li We are your top choice for freight shipping!
+            .image-block
+              img(src="~/static/feature-2.jpg", alt="POLTRANS Logistic")
+          li.features-list__item
+            .text-block
+              h3 TELL US THE RATE RIGHT FOR YOU, WE’LL FIND THE CARRIER RIGHT FOR YOUR FREIGHT.
+              p We know how many trucks are available at any given time in any city in the country, and we find Backhaulers headed home because they provide the lowest rate.
+            .image-block
+              img(src="~/static/feature-3.jpg", alt="POLTRANS Logistic")
+
     section.about-section
       .container
-        h2.with-lines About us
-        p Our company provides your business with efficient delivery of goods throughout Mid-West and East Coast regions. Rest assured, team of professionals always strive to deliver your freight on time, every time, and in an immaculate condition. Always the best service in the industry with highest customer satisfaction!
-    section.features-section
-      .container
-        .inline-block
-          h3.with-lines Our Features
-          ul.features-list
-            li
-              span.icon.icon--delivery
-              h5 Fast Delivery
-            li
-              span.icon.icon--arrival
-              h5 Timely Arrival
-            li
-              span.icon.icon--gps
-              h5 GPS Tracking
-            li
-              span.icon.icon--repair
-              h5 Repair
+        h2 GET A CARRIER
+        p Select <b>SUPREME EXPRESS TRUCKING</b> and ensure your business is always making the right moves. Get your regional and cross-country shipping done on time, when you need it. <b>SUPREME EXPRESS TRUCKING</b> recognizes the importance of partnership. With our logistic expertise and industry experience, we have the partnerships that last. We match every shipper with the transportation services that fit. You deserve the best rates for the most reliable carriers. Don’t settle for anything less. Our services are second-to-none. Get your goods transported on time, every time. Let our service make your success. Meet your every shipping need without worry. You focus on your business goals, we’ll take care of the rest. If you need responsive, effective and efficient freight brokerage, look no further. Our clients trust us for a reason. Find out why and make your move with <b>SUPREME EXPRESS TRUCKING</b> today.
     contacts-section
 </template>
 

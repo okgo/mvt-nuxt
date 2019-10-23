@@ -3,8 +3,8 @@
     .container
       .inline-block.half-width
         .c-contacts-section__message
-          h2.with-lines Talk to us
-          form.c-contacts-section__form(method="POST" action="https://formspree.io/mvtholdinginc@gmail.com")
+          h2 Talk to us
+          form.c-contacts-section__form(method="POST" action="https://formspree.io/julie@poltranslogistics.com")
             .row
               label Name
               input(
@@ -31,20 +31,24 @@
       .inline-block.half-width.clearfix
         .c-contacts-section__content.pull-right
           h4
-            |MVT HOLDING
+            |Poltrans logistic
             span Cargo transportation company
           ul.contacts-list
             li
               label Phone
               p
-                a(href="tel:773-691-4361") 773-691-4361
+                a(href="tel:267-460-4433") 267-460-4433
             li
-              label Fax
+              label Phone
               p
-                a(href="tel:773-691-4361") 773-691-4361
+                a(href="tel:215-863-7776") 215-863-7776
+            li
+              label Email
+              p
+                a(href="mailto:julie@poltranslogistics.com") julie@poltranslogistics.com
             li
               label Adress
-              p 2725 Thatcher Ave unit 307 River Grove, IL 60171
+              p 611 Alburger Ave Philadelphia PA 19115
 </template>
 <script>
   export default {

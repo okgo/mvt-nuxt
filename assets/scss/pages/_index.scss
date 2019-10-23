@@ -15,21 +15,19 @@
   }
   .container { display: flex; }
   .text {
-    width: 60%;
-    max-width: 984px;
-    margin-left: auto;
+    width: 100%;
+    max-width: 936px;
+    margin: 0 auto;
+    text-align: center;
     @include tablet {
-      width: 100%;
       max-width: 640px;
-      margin: 0 auto;
-      text-align: center;
     }
     @include mobile {
       margin-top: 40px;
     }
     p {
-      margin-top: 24px;
-      max-width: 843px;
+      margin-top: 18px;
+      max-width: 900px;
       font-size: 20px;
       line-height: 28px;
       @include desktop {
@@ -37,33 +35,31 @@
         line-height: 24px;
       }
     }
-    .button { margin-top: 16px; }
+    .button { margin-top: 70px; }
   }
 }
 
 .about-section {
-  padding: 80px 0 200px 0;
+  padding: 90px 0;
   text-align: center;
+  background: #fff;
   @include tablet {
-    padding: 50px 0 100px 0;
-  }
-  @include mobile {
-    padding-bottom: 80px;
+    padding: 50px 0;
   }
   p {
-    margin-top: 76px;
-    font-size: 24px;
-    line-height: 33px;
+    margin-top: 60px;
+    font-size: 18px;
+    line-height: 24px;
     @include desktop {
-      font-size: 20px;
-      line-height: 30px;
+      font-size: 16px;
+      line-height: 20px;
     }
     @include tablet {
-      margin-top: 40px;
+      margin-top: 30px;
     }
     @include mobile {
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 }
@@ -71,63 +67,72 @@
 .features-section {
   position: relative;
   background: #424242;
-  padding: 80px 0 160px 0;
-  &::before {
-    content: '';
-    width: 42.761%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: url('/features-bg.jpg');
-    background-size: cover;
-  }
+  padding: 90px 0 193px 0;
   @include tablet {
     padding: 50px 0 100px 0;
     &::before { display: none; }
-    .inline-block {
-      display: block;
-      max-width: 640px;
-      margin: 0 auto;
-      text-align: center;
-    }
   }
   @include mobile {
     padding-bottom: 80px;
-    .inline-block { max-width: 320px; }
   }
+  h2 { text-align: center; }
 }
 
 .features-list {
   padding-top: 35px;
-  @include tablet { display: inline-block; }
-  li {
+  @include tablet { padding-top: 0; }
+  * { color: #fff; }
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     position: relative;
-    margin-top: 40px;
-    padding-left: 237px;
-    @include tablet { text-align: left; }
-    .icon {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 151px;
-      height: 122px;
-      transform: translateY(-50%);
-      &--delivery { background-image: url('/ico-1.png'); }
-      &--arrival { background-image: url('/ico-2.png'); }
-      &--gps { background-image: url('/ico-3.png'); }
-      &--repair { background-image: url('/ico-4.png'); }
+    margin-top: 150px;
+    &:first-child { margin-top: 50px; }
+    p, ul {
+      margin-top: 24px;
+      @include tablet {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
-    h5 { line-height: 122px; }
+    .text-block { width: 50%; }
+    .image-block {
+      text-align: right;
+      width: 50%;
+      padding-left: 20px;
+      img {
+        max-width: 700px;
+        border-radius: 2px;
+      }
+    }
+    &--reversed {
+      flex-direction: row-reverse;
+      .text-block { text-align: right; }
+      .image-block {
+        padding-left: 0;
+        padding-right: 20px;
+        text-align: left;
+      }
+      @include tablet {
+        .text-block { text-align: center; }
+      }
+    }
+    @include tablet {
+      display: block;
+      text-align: center;
+      margin-top: 50px;
+      &:first-child { margin-top: 30px; }
+      .text-block { width: 100%; }
+      .image-block {
+        margin-top: 30px;
+        width: 100%;
+        padding: 0;
+      }
+    }
   }
   @include desktop {
-    li {
-      padding-left: 150px;
-      .icon {
-        width: 100px;
-        height: 81px;
-      }
-      h5 { line-height: 81px; }
-    }
+
   }
 }

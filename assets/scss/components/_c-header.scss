@@ -1,13 +1,13 @@
 .c-header {
-  padding: 18px 0;
+  padding: 11px 0 9px 0;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, .16);
+  background: rgba(0, 0, 0, .3);
   z-index: 10;
   .container {
-    max-width: 1590px;
+    max-width: 1760px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,7 @@
     li {
       position: relative;
       padding-left: 32px;
-      margin-top: 23px;
+      margin-top: 15px;
       font-size: 18px;
       line-height: 25px;
       &:first-child { margin-top: 0; }
