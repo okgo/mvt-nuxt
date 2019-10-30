@@ -35,7 +35,20 @@
         line-height: 24px;
       }
     }
-    .button { margin-top: 70px; }
+    .button { margin-top: 40px; }
+  }
+}
+
+.discount {
+  display: block;
+  margin: 34px auto 0 auto;
+  width: 359px;
+  height: 124px;
+  background: url('/10off.png');
+  background-size: 100% 100%;
+  @include mobile {
+    width: 240px;
+    height: 83px;
   }
 }
 
