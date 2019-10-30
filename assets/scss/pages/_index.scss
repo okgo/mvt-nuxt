@@ -1,20 +1,18 @@
 .main-section {
   position: relative;
   display: flex;
-  align-items: center;
+  // align-items: center;
   width: 100%;
   height: 94vh;
-  min-height: 600px;
+  min-height: 730px;
   background-image: url('/home.jpg');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: cover;
   color: #fff;
-  @include mobile {
-    min-height: 540px;
-  }
   .container { display: flex; }
   .text {
+    padding-top: 280px;
     width: 100%;
     max-width: 936px;
     margin: 0 auto;
@@ -23,7 +21,7 @@
       max-width: 640px;
     }
     @include mobile {
-      margin-top: 40px;
+      padding-top: 220px;
     }
     p {
       margin-top: 18px;
@@ -40,8 +38,10 @@
 }
 
 .discount {
+  position: absolute;
+  right: 20px;
+  top: 128px;
   display: block;
-  margin: 34px auto 0 auto;
   width: 359px;
   height: 124px;
   background: url('/10off.png');
@@ -49,6 +49,10 @@
   @include mobile {
     width: 240px;
     height: 83px;
+    top: 100px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

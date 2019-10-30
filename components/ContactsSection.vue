@@ -3,7 +3,7 @@
     .container
       .inline-block.half-width
         .c-contacts-section__message
-          h2 Talk to us
+          h2 Get a truck
           form.c-contacts-section__form(method="POST" action="https://formspree.io/julie@poltranslogistics.com")
             .row
               label Name
