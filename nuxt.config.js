@@ -34,7 +34,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'MVT Holding - We deliver your loads in time, every time',
+    title: 'POLTRANS logistic - We deliver your loads in time, every time',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

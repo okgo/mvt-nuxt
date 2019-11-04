@@ -8,8 +8,8 @@
             .row
               label Name
               input(
-                type="text"
                 name="name"
+                type="text"
                 placeholder="Your Name"
                 required="required")
             .row
@@ -30,9 +30,7 @@
 
       .inline-block.half-width.clearfix
         .c-contacts-section__content.pull-right
-          h4
-            |Poltrans logistic
-            span Cargo transportation company
+          h4 Poltrans logistic
           ul.contacts-list
             li
               label Phone
